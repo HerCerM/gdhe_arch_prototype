@@ -19,6 +19,6 @@ class Admin
 
     public function __toString()
     {
-        return "{$this->name} {$this->first_last_name}";
+        return json_encode($this);
     }
 }

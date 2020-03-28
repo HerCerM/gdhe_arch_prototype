@@ -7,5 +7,5 @@ require_once '../../vendor/autoload.php';
 $admin_dao = new AdminDAO;
 
 $admins = $admin_dao->get_all();
-foreach ($admins as $admin)
-    echo '<br>' . (string) $admin;
+
+echo json_encode($admins);
