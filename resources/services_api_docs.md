@@ -4,9 +4,9 @@
 
 | View |Service |
 |---|---|
-| Login | [GET(user)BY(credentials)](#GET(user)BY(credentials)) |
-| Groups Catalog | [GET(groups)GB(major)](#GET(groups)GB(major))<br>[GET(classes)BY(group_id)](#GET(classes)BY(group_id)) |
-| Groups Edit | [GET(courses)BY(group_id)](#GET(courses)BY(group_id))<br>[GET(classes)BY(group_id)](#GET(classes)BY(group_id))<br>[POST(class)](#POST(class))<br>[POST(approve_group)](#POST(approve_group)) |
+| Login | [GET(user)BY(credentials)](#getuserbycredentials) |
+| Groups Catalog | [GET(groups)GB(major)](#getgroupsgbmajor)<br>[GET(classes)BY(group_id)](#getclassesbygroup_id)) |
+| Groups Edit | [GET(courses)BY(group_id)](#getcoursesbygroup_id)<br>[GET(classes)BY(group_id)](#getclassesbygroup_id)<br>[POST(class)](#postclass)<br>[POST(approve_group)](#postapprove_group) |
 
 ## Services
 
