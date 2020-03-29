@@ -16,7 +16,7 @@
 
 ```json
 {
-  "username": ("A" | "P" | "S")<user_code>,
+  "username": "('A' | 'P' | 'S')<user_code>",
   "password": "<password>"
 }
 ```
@@ -25,7 +25,7 @@
 
 ```json
 {
-  "type": ("A" | "P" | "S"),
+  "type": "('A' | 'P' | 'S')",
 }
 ```
 
@@ -42,10 +42,10 @@
     "<major>":
         [
             {
-                "group_id": <INTEGER>,
-                "approved": (0 | 1),
-                "group_letter": <"A"-"Z">,
-                "semester": <INTEGER>
+                "group_id": "<INTEGER>",
+                "approved": "(0 | 1)",
+                "group_letter": "<'A'-'Z'>",
+                "semester": "<INTEGER>"
             }
         ]
 
@@ -58,7 +58,7 @@
 
 ```json
 {
-    "group_id": <INTEGER>
+    "group_id": "<INTEGER>"
 }
 ```
 
@@ -67,11 +67,11 @@
 ```json
 [
     {
-        "start_hour": <24-format>,
-        "end_hour": <24-format>,
-        "classroom_name": <classroom>,
-        "course_id": <INTEGER>,
-        "weekday": ("mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun")
+        "start_hour": "<24-format>",
+        "end_hour": "<24-format>",
+        "classroom_name": "<classroom>",
+        "course_id": "<INTEGER>",
+        "weekday": "('mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat' | 'sun')"
     }
 ]
 ```
@@ -82,7 +82,7 @@
 
 ```json
 {
-    "group_id": <INTEGER>
+    "group_id": "<INTEGER>"
 }
 ```
 
@@ -91,10 +91,10 @@
 ```json
 [
     {
-        "course_id": <INTEGER>,
-        "professor_name": <name>,
-        "subject_name": <name>,
-        "required_hours": <INTEGER>
+        "course_id": "<INTEGER>",
+        "professor_name": "<name>",
+        "subject_name": "<name>",
+        "required_hours": "<INTEGER>"
     }
 ]
 ```
@@ -105,11 +105,11 @@
 
 ```json
 {
-    "start_hour": <24-format>,
-    "end_hour": <24-format>,
-    "classroom_name": <classroom>,
-    "course_id": <INTEGER>,
-    "weekday": ("mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun")
+    "start_hour": "<24-format>",
+    "end_hour": "<24-format>",
+    "classroom_name": "<classroom>",
+    "course_id": "<INTEGER>",
+    "weekday": "('mon' | 'tue' | 'wed' | 'thu' | 'fri' | 'sat' | 'sun')"
 }
 ```
 
@@ -123,6 +123,6 @@
 
 ```json
 {
-    "group_id": <INTEGER>
+    "group_id": "<INTEGER>"
 }
 ```
