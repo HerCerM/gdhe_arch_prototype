@@ -5,8 +5,8 @@
 | View |Service |
 |---|---|
 | Login | [GET(user)BY(credentials)](#getuserbycredentials) |
-| Groups Catalog | [GET(groups)GB(major)](#getgroupsgbmajor)<br>[GET(classes)BY(group_id)](#getclassesbygroup_id)) |
-| Groups Edit | [GET(courses)BY(group_id)](#getcoursesbygroup_id)<br>[GET(classes)BY(group_id)](#getclassesbygroup_id)<br>[POST(class)](#postclass)<br>[POST(approve_group)](#postapprove_group) |
+| Groups Catalog | [GET(groups)GB(major)](#getgroupsgbmajor)<br>[GET(classes)BY(group_id)](#getclassesbygroup_id)<br>[POST(approve_group)](#postapprove_group) |
+| Groups Edit | [GET(courses)BY(group_id)](#getcoursesbygroup_id)<br>[GET(classes)BY(group_id)](#getclassesbygroup_id)<br>[POST(class)](#postclass)<br>[POST(approve_group)](#postapprove_group)<br>[GET(classrooms)](#getclassrooms) |
 
 ## Services
 
@@ -94,9 +94,17 @@
         "course_id": "<INTEGER>",
         "professor_name": "<name>",
         "subject_name": "<name>",
-        "required_hours": "<INTEGER>"
+        "required_hours": "<FLOAT>"
     }
 ]
+```
+
+### GET(classrooms)
+
+#### Response
+
+```json
+["<classroom_name>"]
 ```
 
 ### POST(class)
@@ -123,6 +131,7 @@
 
 ```json
 {
-    "group_id": "<INTEGER>"
+    "group_id": "<INTEGER>",
+    "approved": "(0 | 1)"
 }
 ```
