@@ -1,5 +1,35 @@
 # Services API Documentation
 
+## Table of contents
+
+<!-- TOC -->
+
+- [Services API Documentation](#services-api-documentation)
+    - [Table of contents](#table-of-contents)
+    - [Services required on each view](#services-required-on-each-view)
+    - [Services](#services)
+        - [GET(user)BY(credentials)](#getuserbycredentials)
+            - [Request](#request)
+            - [Response](#response)
+            - [Error HTTP code](#error-http-code)
+        - [GET(groups)GB(major)](#getgroupsgbmajor)
+            - [Response](#response-1)
+        - [GET(classes)BY(group_id)](#getclassesbygroup_id)
+            - [Request](#request-1)
+            - [Response](#response-2)
+        - [GET(courses)BY(group_id)](#getcoursesbygroup_id)
+            - [Request](#request-2)
+            - [Response](#response-3)
+        - [GET(classrooms)](#getclassrooms)
+            - [Response](#response-4)
+        - [POST(class)](#postclass)
+            - [Request](#request-3)
+            - [Error HTTP code](#error-http-code-1)
+        - [POST(approve_group)](#postapprove_group)
+            - [Request](#request-4)
+
+<!-- /TOC -->
+
 ## Services required on each view
 
 | View |Service |
